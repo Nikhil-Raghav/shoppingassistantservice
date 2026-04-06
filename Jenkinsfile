@@ -59,7 +59,7 @@ stages {
                         git config user.name "jenkins"
 
                         # Update image tag
-                        sed -i "s|image: .*recommendationservice.*|image: ${IMAGE_NAME}|g" deployment.yaml
+                        sed -i "s|image: .*shoppingassistantservice.*|image: ${IMAGE_NAME}|g" deployment.yaml
 
                         git add .
                         git commit -m "Update recommendationservice image to ${IMAGE_NAME}"
