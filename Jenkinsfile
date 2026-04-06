@@ -53,7 +53,7 @@ stages {
                             rm -rf gitops
                         fi
                         git clone https://$GIT_USERNAME:$GIT_PASSWORD@github.com/Nikhil-Raghav/GitOps.git gitops
-                        cd gitops/base/shoppingassistanceservice/
+                        cd gitops/base/shoppingassistantservice/
 
                         git config user.email "jenkins@ci.com"
                         git config user.name "jenkins"
